@@ -49,4 +49,5 @@ HTML, CSS, Javascript.
 * GitHub Repository:https://github.com/USOYJ/Idancodequiz 
 * Deployed URL: https://usoyj.github.io/Idancodequiz/index.html
   
-
+## Credits:
+* Oyindamola Jongbo
