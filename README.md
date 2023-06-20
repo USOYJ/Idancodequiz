@@ -25,6 +25,7 @@ The JSON.stringify() static method converts a JavaScript value to a JSON string,
 HTML, CSS, Javascript.
 
 ## What to expect:
+<<<<<<< HEAD
 <p>when a user clicks on this <a href="https://usoyj.github.io/Idancodequiz/index.html">link</a> its takes you here:</p>
 <img width="1429" alt="start page" src="https://github.com/USOYJ/Idancodequiz/assets/125850331/074b996f-86ce-45c7-a2dd-4fdb8544d893">
 <p>This shows the start page</p>
@@ -39,6 +40,10 @@ HTML, CSS, Javascript.
 <img width="1415" alt="end page" src="https://github.com/USOYJ/Idancodequiz/assets/125850331/6a50db60-0a20-4efd-9960-d1411a6542bc">
 
 
+=======
+<p>when a user clicks on the click, its takes you here:</p>
+<img scr="./Assets/start page.png" alt="start page">
+>>>>>>> 95b4c64 (updated README)
 
 
 * GitHub Repository:https://github.com/USOYJ/Idancodequiz 
