@@ -12,13 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
 </head>
 
+
 <body>
 
     <div class="start-screen">
         <h1>Coding Quiz</h1>
         <h2>ARE YOU READY?</h2>
         <button id="start-button">Start</button>
-        <button id="show-scores">See High Scores</button>
+        <button id="highscore-btn">See High Scores</button>
     </div>
     <div id="display-container">
         <div class="header">
@@ -29,7 +30,7 @@
             </div>
             <div class="timer-div">
                 <img src="./Assets/Timer icon.png" alt="timer icon" width="20px">
-                <span class="time-left"> 10s</span>
+                <span class="time-left"> 20s</span>
             </div>
         </div>
         <div id="container">
@@ -45,7 +46,17 @@
         <button class="sumbit" id="submit-score"> Sumbit Score</button>
     </div>
 
+    <div class="scorelist-container hide">
+        <div id="highScores" class="flex-center flex-column">
+            <h1 id="finalScore">Leaderboard</h1>
+            <ul id="highScoresList">
 
+            </ul>
+            <a href="./index.html" class="btn">Go Home</a>
+        </div>
+    </div>
+
+    
     <script src="script.js"></script>
 </body>
 

@@ -4,14 +4,23 @@ let nextBtn = document.getElementById("next-button");
 let countOfQuestion = document.querySelector(".number-of-question");
 let displayContainer = document.getElementById("display-container");
 let scoreContainer = document.querySelector(".score-container");
+let scorelistContainer = document.querySelector(".scorelist-container");
 let restart = document.getElementById("restart");
 let userScore = document.getElementById("user-score");
 let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
+let scoreArea = document.querySelector(".score-area");
+let highScoreButton = document.getElementById("highscore-btn");
+let submitScoreButton = document.getElementById("submit-score");
 let questionCount;
 let scoreCount = 0;
-let count = 11;
+let count = 20;
 let countdown;
+
+
+
+
+
 
 const quizArray = [
     {
@@ -58,7 +67,7 @@ nextBtn.addEventListener("click", (displayNext = () => {
         countOfQuestion.innerHTML = questionCount + 1 + " of " + quizArray.length + "Question";
 
         quizDisplay(questionCount);
-        count = 11;
+        count = 20;
         clearInterval(countdown);
         timerDisplay();
     }
@@ -139,7 +148,7 @@ function intial() {
     quizContainer.innerHTML = "";
     questionCount = 0;
     scoreCount = 0;
-    count = 11;
+    count = 20;
     clearInterval(countdown);
     timerDisplay();
     quizCreater();
@@ -156,3 +165,82 @@ window.onload = () => {
     startScreen.classList.remove("hide");
     displayContainer.classList.add("hide");
 };
+
+highScoreButton.addEventListener("click", () => {
+    startScreen.classList.add("hide");
+    scorelistContainer.classList.remove("hide");
+    intial();
+});
+
+
+
+
+
+const username = document.querySelector('#username')
+const submitScoreBtn = document.querySelector('#submitScoreBtn')
+const finalScore = document.querySelector('#finalScore')
+const mostRecentScore = localStorage.getItem('mostRecentScore')
+const restartBtn = document.querySelector('#restart')
+const goHomeBtn = document.querySelector('#go-home')
+
+const highScores = JSON.parse(localStorage.getItem('highScores')) || []
+
+const MAX_HIGH_SCORES = 4;
+
+
+$('#restart').css("display", "none")
+
+
+// this function is to make sure that Save button is disabled untill player adds their name
+
+finalScore.innerText = mostRecentScore
+
+
+username.addEventListener('keyup', () => {
+
+    submitScoreBtn.disabled = !username.value
+    displayBtns();
+
+}
+)
+
+
+saveHighScore = e => {
+    e.preventDefault()
+
+    const score = {
+        score: mostRecentScore,
+        name: username.value
+    }
+
+    highScores.push(score)
+
+    highScores.sort((a, b) => {
+        return b.score - a.score
+    })
+
+    highScores.splice(5)
+
+    localStorage.setItem('highScores', JSON.stringify(highScores))
+
+}
+// function to hide/display 2 buttons based on entering players name, unless this condition is not met JQuery is defaulting these
+// two buttons to be hidden
+function displayBtns() {
+    if (submitScoreBtn.disabled === true) {
+        $('#restart').css("display", "none");
+        $('#go-home').css("display", "none")
+
+    } else {
+        $('#restart').css("display", "block");
+        $('#go-home').css("display", "block")
+
+    }
+}
+displayBtns();
+
+//function to click Save button 
+submitScoreBtn.addEventListener("click", function () {
+    return window.location.assign('./index.html');
+
+});
