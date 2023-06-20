@@ -26,7 +26,18 @@ HTML, CSS, Javascript.
 
 ## What to expect:
 <p>when a user clicks on the click, its takes you here:</p>
-<img scr="./Assets/start page.png" alt="start page">
+<img width="1429" alt="start page" src="https://github.com/USOYJ/Idancodequiz/assets/125850331/074b996f-86ce-45c7-a2dd-4fdb8544d893">
+
+<img width="1391" alt="question" src="https://github.com/USOYJ/Idancodequiz/assets/125850331/411a6c59-5dc0-40d9-85b5-cdae112a003e">
+
+
+<img width="1437" alt="highscore" src="https://github.com/USOYJ/Idancodequiz/assets/125850331/a0ef839d-1a1e-40f4-90ef-a8433508b020">
+
+
+
+<img width="1415" alt="end page" src="https://github.com/USOYJ/Idancodequiz/assets/125850331/6a50db60-0a20-4efd-9960-d1411a6542bc">
+
+
 
 
 * GitHub Repository: 
