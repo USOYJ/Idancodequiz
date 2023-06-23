@@ -39,13 +39,6 @@ HTML, CSS, Javascript.
 <p>If you want to look at the leaderboard AKA the highscore list this is the page that will </p>
 <img width="1415" alt="end page" src="https://github.com/USOYJ/Idancodequiz/assets/125850331/6a50db60-0a20-4efd-9960-d1411a6542bc">
 
-
-=======
-<p>when a user clicks on the click, its takes you here:</p>
-<img scr="./Assets/start page.png" alt="start page">
->>>>>>> 95b4c64 (updated README)
-
-
 * GitHub Repository:https://github.com/USOYJ/Idancodequiz 
 * Deployed URL: https://usoyj.github.io/Idancodequiz/index.html
   
